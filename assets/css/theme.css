@@ -1,32 +1,44 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #24252a;
 }
 
 li,
 a,
 button {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  color: #edf0f1;
+  color: #252641;
   text-decoration: none;
 }
 
+/* Header */
 header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   padding: 30px 10%;
+  background-color: #fff2e1;
 }
 
-.logo {
+header .logo {
   cursor: pointer;
   margin-right: auto;
+  width: 189px;
+  height: 48px;
+  left: 122px;
+  top: 77px;
+
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 48px;
+  letter-spacing: 0.04em;
+
+  color: #113c49;
 }
 
 .nav-links {
@@ -43,20 +55,39 @@ header {
 }
 
 .nav-links li a:hover {
-  color: #0088a9;
+  color: #2f327d;
 }
 
-button {
+header a button {
   margin-left: 20px;
   padding: 9px 25px;
-  background-color: rgba(0, 136, 169, 1);
+  background-color: #ffffff;
   border: none;
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
 
-button:hover {
+header a button:hover {
   padding: 9px 25px;
-  background-color: rgba(0, 136, 169, 0.8);
+  background-color: #f48c06;
+  color: #ffffff;
+}
+
+#login {
+  background-color: #ffffff;
+  color: #6c6c6c;
+}
+
+#login:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+#sign-up {
+  background-color: #f48c06;
+  color: #ffffff;
+}
+
+#sign-up:hover {
+  background-color: #ca6c00;
 }
