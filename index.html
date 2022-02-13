@@ -15,24 +15,46 @@
 </head>
 
 <body>
-    <header>
-        <a class="logo" href=""><strong>Bachpedia</strong></a>
-        <nav>
+    <header class="main-header" role="header">
+        <div class="logo">
+            <a href="#" style="font-size: 28px;"><strong>Bachpedia</strong></a>
+        </div>
+        <nav id="menu" class="main-nav" role="navigation">
             <ul class="nav-links">
                 <li class="nav-item"><a href="index.html">Inicio</a></li>
                 <li class="nav-item"><a href="itinerarios.html">Itinerarios</a></li>
                 <li class="nav-item"><a href="asignaturas.html">Asignaturas</a></li>
-                <li class="nav-item"><a href="about-us.html">Sobre Nosotros</a></li>
+                <li class="has-submenu nav-item"><a href="#">Más</a>
+                    <ul class="sub-menu">
+                        <li><a href="ayudanos.html">Ayúdanos</a></li>
+                        <li><a href="enlaces.html">Enlaces</a></li>
+                        <li><a href="foro.html">Foro</a></li>
+                        <li><a href="about-us.html">Sobre nosotros</a></li>
+                    </ul>
+                </li>
         </nav>
         <a class="cta" href="#"><button id="login">Login</button></a>
         <a class="cta" href="#"><button id="sign-up">Sign up</button></a>
     </header>
-    <main>
-        <section id="header" class="header-section">
-            <svg id="header" width="1920" height="850">
-                <rect width="1920" height="1118" style="fill:#fff2e1; border-radius: 15px 50px" />
-            </svg>
-    </main>
+
+    <section id="header" class="section main-banner" data-section="section1">
+        <video autoplay muted loop id="bg-video">
+            <source src="assets/images/course-video.mp4" type="video/mp4" />
+        </video>
+
+        <div class="video-overlay header-text">
+            <div class="caption">
+                <h2><em>¿Bachillerato?</em> ¡Fácil! a partir de hoy.</h2>
+                <h6>Encuentra todo lo que necesitas para aprobar.¡Apuntes, exámenes, ejercicios, y mucho más!</h6>
+                <div class="main-button">
+                    <div class="scroll-to-section"><a href="#section2">Discover more</a></div>
+                </div>
+            </div>
+        </div>
+        <svg id="header" width="1920" height="850">
+            <rect width="1920" height="1118" style="fill:#fff2e1; border-radius: 15px 50px" />
+        </svg>
+    </section>
 
 </body>
 

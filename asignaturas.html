@@ -15,14 +15,23 @@
 </head>
 
 <body>
-    <header>
-        <a class="logo" href=""><strong>Bachpedia</strong></a>
-        <nav>
+    <header class="main-header" role="header">
+        <div class="logo">
+            <a href="#" style="font-size: 28px;"><strong>Bachpedia</strong></a>
+        </div>
+        <nav id="menu" class="main-nav" role="navigation">
             <ul class="nav-links">
                 <li class="nav-item"><a href="index.html">Inicio</a></li>
                 <li class="nav-item"><a href="itinerarios.html">Itinerarios</a></li>
                 <li class="nav-item"><a href="asignaturas.html">Asignaturas</a></li>
-                <li class="nav-item"><a href="about-us.html">Sobre Nosotros</a></li>
+                <li class="has-submenu nav-item"><a href="#">Más</a>
+                    <ul class="sub-menu">
+                        <li><a href="ayudanos.html">Ayúdanos</a></li>
+                        <li><a href="enlaces.html">Enlaces</a></li>
+                        <li><a href="foro.html">Foro</a></li>
+                        <li><a href="about-us.html">Sobre nosotros</a></li>
+                    </ul>
+                </li>
         </nav>
         <a class="cta" href="#"><button id="login">Login</button></a>
         <a class="cta" href="#"><button id="sign-up">Sign up</button></a>
@@ -35,5 +44,7 @@
     </main>
 
 </body>
+
+</html>
 
 </html>
